@@ -1,0 +1,244 @@
+{% load static %}
+<div class="left-side-menu">
+  <!-- LOGO -->
+  {% if messages %}
+  <div class="alert alert-success alert-dismissible">
+    {% for message in messages %}
+    <p>{{ message }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
+  <a href="#" class="logo text-center logo-light">
+    <span class="logo-lg">
+      <img src="{% static 'images/logo.png' %}" alt="" height="16" />
+    </span>
+    <span class="logo-sm">
+      <img src="{% static 'images/logo_sm.png' %}" alt="" height="16" />
+    </span>
+  </a>
+  <!-- LOGO -->
+  <a href="#" class="logo text-center logo-dark">
+    <span class="logo-lg">
+      <img src="{% static 'images/logo-dark.png' %}" alt="" height="16" />
+    </span>
+    <span class="logo-sm">
+      <img src="{% static 'images/logo_sm_dark.png' %}" alt="" height="16" />
+    </span>
+  </a>
+
+  <div class="h-100" id="left-side-menu-container" data-simplebar>
+    <!--- Sidemenu -->
+    <ul class="metismenu side-nav">
+      <li class="side-nav-title side-nav-item">Navigation</li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-home-alt"></i>
+          <span> Dashboards </span>
+        </a>
+      </li>
+      <li class="side-nav-title side-nav-item">Posts</li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Component </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Component </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Left Menu Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Top Three Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Middle Menu Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Sub-sub Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Sub-sub Category </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Blog </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Blog </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Project </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Project </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Users </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Orders </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Videos </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Videos </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Frequnetly Asked Questions </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Frequnetly Asked Questions </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Timings </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Timings </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Features </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Features </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Curriculam </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Curriculam </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Blank Pages </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Blank Pages </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Terms and Conditions for Blank Pages </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Terms and Conditions of Blank Pages </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Admin Reviews </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Admin Reviews </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> All Offers or Ribbons </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Add Offers or Ribbons </span>
+        </a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">
+          <i class="uil-calender"></i>
+          <span> Send Message </span>
+        </a>
+      </li>
+    </ul>
+    <!-- end Help Box -->
+    <!-- End Sidebar -->
+    <div class="clearfix"></div>
+  </div>
+  <!-- Sidebar -left -->
+</div>
