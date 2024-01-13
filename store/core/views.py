@@ -10,7 +10,14 @@ def home(request):
     return render(request, 'core/index.html')
 
 def shop(request):
-    return render(request, 'core/shop-grid')
+    return render(request, 'core/shop.html')
+
+def search(request):
+    search = request.GET['search']
+    totalposts = Product.objects.filter(title_icontains=search)
+    context = {'totalposts':totalposts, 'search':search}
+    return render(request, 'core/search.html', context)
+
 
 def add_to_cart(request):
     product = get_object_or_404(Product)
